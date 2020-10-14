@@ -1,5 +1,5 @@
-import { store } from 'quasar/wrappers';
-import Vuex from 'vuex';
+import { store } from "quasar/wrappers";
+import Vuex from "vuex";
 
 // import example from './module-example';
 // import { ExampleStateInterface } from './module-example/state';

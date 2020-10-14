@@ -1,5 +1,6 @@
 <template>
   <q-page class="fit row">
+    <biases-stepper />
     <br>
   </q-page>
 </template>
