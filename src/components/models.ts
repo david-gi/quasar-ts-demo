@@ -1,8 +1,13 @@
-export interface Todo {
-  id: number;
+export class StepModel {
+  icon: string;
+  title: string;
+  heading: string;
   content: string;
-}
 
-export interface Meta {
-  totalCount: number;
+  constructor(icon: string, title: string, heading: string, content: string) {
+    this.icon = icon;
+    this.title = title;
+    this.heading = heading;
+    this.content = content;
+  }
 }

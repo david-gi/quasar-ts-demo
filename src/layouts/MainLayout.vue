@@ -48,7 +48,7 @@ const linksData = [
   {
     title: "Cognitive biases",
     caption: "Know to overthrow",
-    icon: "replay",
+    icon: "psychology",
     link: "/#/biases",
   },
   {

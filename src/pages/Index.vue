@@ -1,6 +1,7 @@
 <template>
-  <q-page class="fit row">
-    <br>
+  <q-page class="fit row q-px-xl">
+    <h1>Quasar is fun!</h1>
+    <h4>Finally, one code base to rule them all.</h4>
   </q-page>
 </template>
 
