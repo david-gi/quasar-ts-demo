@@ -5,8 +5,7 @@
     header-nav
     swipeable
     color="primary"
-    class="no-shadow"
-    header-class="text-bold bg-red"
+    class="no-shadow q-pt-none"
     animated
   >
     <q-step
@@ -48,15 +47,15 @@
 </template>
 
 <script lang="ts">
-import { StepModel } from "./models";
 import { defineComponent } from "@vue/composition-api";
+import { StepModel } from "./models";
 
 export default defineComponent({
   name: "ItemStepper",
 
   props: {
     items: {
-      type: StepModel[0],
+      type: [StepModel],
       required: true,
     },
   },

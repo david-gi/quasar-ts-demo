@@ -1,7 +1,10 @@
 export class StepModel {
   icon: string;
+
   title: string;
+
   heading: string;
+
   content: string;
 
   constructor(icon: string, title: string, heading: string, content: string) {

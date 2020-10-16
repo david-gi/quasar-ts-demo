@@ -1,5 +1,5 @@
 <template>
-  <q-card class="col-10 no-shadow">
+  <q-card class="col-10 no-shadow q-px-md q-py-md">
     <q-card-section>
       <div class="text-h6">Rationality takes practise</div>
       <div class="text-subtitle2 q-pb-sm">
@@ -11,9 +11,9 @@
 </template>
 
 <script lang="ts">
-import { StepModel } from "./models";
 import ItemStepper from "components/ItemStepper.vue";
 import { defineComponent } from "@vue/composition-api";
+import { StepModel } from "./models";
 
 export default defineComponent({
   name: "BiasesStepper",

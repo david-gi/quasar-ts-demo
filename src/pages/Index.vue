@@ -1,17 +1,16 @@
 <template>
-  <q-page class="fit row q-px-xl">
+  <q-page class="q-px-xl">
     <h1>Quasar is fun!</h1>
+    <br>
     <h4>Finally, one code base to rule them all.</h4>
   </q-page>
 </template>
 
 <script lang="ts">
-import BiasesStepper from "components/BiasesStepper.vue";
 import { defineComponent } from "@vue/composition-api";
 
 export default defineComponent({
   name: "Start",
-  components: { BiasesStepper },
 
   methods: {
     welcomeToast() : void {
@@ -25,20 +24,6 @@ export default defineComponent({
       });
       this.$q.localStorage.set("Visited", true);
       setTimeout(() => { this.$q.loadingBar.stop(); }, 1000);
-    },
-    returnToast() : void {
-      this.$q.notify({
-        message: "Why did you leave?!",
-        icon: "sentiment_dissatisfied",
-        color: this.$q.dark.isActive ? "negative" : "dark",
-        position: "bottom-right",
-      });
-    },
-  },
-
-  watch: {
-    "$q.appVisible": function (val) {
-      if (val) { this.returnToast(); }
     },
   },
 
