@@ -1,8 +1,8 @@
 import { ActionTree } from "vuex";
-import { IState } from "../index";
+import { IStore } from "../index";
 import { IBiasesState } from "./state";
 
-const actions: ActionTree<IBiasesState, IState> = {
+const actions: ActionTree<IBiasesState, IStore> = {
   fetchBiases({ commit }) : void {
     // api call...
     const data = null;
