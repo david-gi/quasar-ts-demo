@@ -20,14 +20,14 @@ export default defineComponent({
   components: { ItemStepper },
 
   setup(props, context) {
-    let biases: StepItem[] = StepItem[0]; // context.root.$store.state.biases.biasList);
+    const biases = ref([StepItem]); // ref(context.root.$store.state.biases.biasList);
     async function getFun() : Promise<void> {
       await context.root.$store.dispatch("biases/fetchBiases");
-      biases = context.root.$store.getters("biases/titledBiases");
+      biases.value = context.root.$store.getters["biases/titledBiases"];
     }
     onMounted(getFun);
 
-    return { biases };
+    return { biases, getFun };
   },
 });
 </script>

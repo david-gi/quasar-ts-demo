@@ -51,4 +51,4 @@ const state: IBiasesState = {
   ],
 };
 
-export default state as IBiasesState;
+export default state;

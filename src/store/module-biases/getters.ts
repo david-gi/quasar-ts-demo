@@ -1,9 +1,10 @@
+import { StepItem } from "src/components/models";
 import { GetterTree } from "vuex";
-import { StateInterface } from "../index";
-import { BiasesStateInterface } from "./state";
+import { IState } from "../index";
+import { IBiasesState } from "./state";
 
-const getters: GetterTree<BiasesStateInterface, StateInterface> = {
-  titledBiases(context) {
+const getters: GetterTree<IBiasesState, IState> = {
+  titledBiases(context): StepItem[] {
     // filter Biases that have titles
     return context.biasList.filter((bias) => !!bias.title);
   },
