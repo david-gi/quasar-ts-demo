@@ -1,4 +1,4 @@
-export class StepModel {
+export class StepItem {
   icon: string;
 
   title: string;

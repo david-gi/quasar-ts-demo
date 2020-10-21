@@ -1,27 +1,24 @@
 import { store } from "quasar/wrappers";
 import Vuex from "vuex";
 
-// import example from './module-example';
-// import { ExampleStateInterface } from './module-example/state';
+import biases from "./module-biases";
+import { IBiasesState } from "./module-biases/state";
 
 /*
  * If not building with SSR mode, you can
  * directly export the Store instantiation
  */
 
-export interface StateInterface {
-  // Define your own store structure, using submodules if needed
-  // example: ExampleStateInterface;
-  // Declared as unknown to avoid linting issue. Best to strongly type as per the line above.
-  example: unknown;
+export interface IState {
+  biases: IBiasesState;
 }
 
 export default store(({ Vue }) => {
   Vue.use(Vuex);
 
-  const Store = new Vuex.Store<StateInterface>({
+  const Store = new Vuex.Store<IState>({
     modules: {
-      // example
+      biases,
     },
 
     // enable strict mode (adds overhead!)

@@ -48,14 +48,14 @@
 
 <script lang="ts">
 import { defineComponent } from "@vue/composition-api";
-import { StepModel } from "./models";
+import { StepItem } from "./models";
 
 export default defineComponent({
   name: "ItemStepper",
 
   props: {
     items: {
-      type: [StepModel],
+      type: Object as () => StepItem[],
       required: true,
     },
   },
