@@ -10,14 +10,14 @@ import { IBiasesState } from "./module-biases/state";
  * directly export the Store instantiation
  */
 
-export interface IState {
-  biases: Module<IBiasesState, IState>;
+export interface IStore {
+  biases: Module<IBiasesState, IStore>;
 }
 
 // export default store(({ Vue }) => {
 //   Vue.use(Vuex);
 
-//   const Store = new Vuex.Store<IState>({
+//   const Store = new Vuex.Store<IStore>({
 //     modules: {
 //       biases,
 //     },
@@ -32,7 +32,7 @@ export interface IState {
 
 Vue.use(Vuex);
 
-export default new Vuex.Store<IState>({
+export default new Vuex.Store<IStore>({
   modules: {
     biases,
   },
