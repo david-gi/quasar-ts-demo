@@ -47,7 +47,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "@vue/composition-api";
+import { defineComponent, PropType } from "@vue/composition-api";
 import { StepItem } from "./models";
 
 export default defineComponent({
@@ -55,7 +55,7 @@ export default defineComponent({
 
   props: {
     items: {
-      type: Object as () => StepItem[],
+      type: Array as PropType<typeof StepItem[]>,
       required: true,
     },
   },

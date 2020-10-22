@@ -80,6 +80,7 @@ export default defineComponent({
   },
 
   watch: {
+    /* eslint-disable func-names */
     "$q.appVisible": function (val) {
       if (val) {
         this.returnToast();

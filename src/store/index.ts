@@ -1,5 +1,4 @@
-// import { store } from "quasar/wrappers";
-import Vue from "vue";
+import { store } from "quasar/wrappers";
 import Vuex, { Module } from "vuex";
 
 import biases from "./module-biases";
@@ -14,30 +13,31 @@ export interface IStore {
   biases: Module<IBiasesState, IStore>;
 }
 
-// export default store(({ Vue }) => {
-//   Vue.use(Vuex);
+export default store(({ Vue }) => {
+  Vue.use(Vuex);
 
-//   const Store = new Vuex.Store<IStore>({
-//     modules: {
-//       biases,
-//     },
+  const Store = new Vuex.Store<IStore>({
+    modules: {
+      biases,
+    },
 
-//     // enable strict mode (adds overhead!)
-//     // for dev mode only
-//     strict: !!process.env.DEV,
-//   });
+    // enable strict mode (adds overhead!)
+    // for dev mode only
+    strict: !!process.env.DEV,
+  });
 
-//   return Store;
-// });
-
-Vue.use(Vuex);
-
-export default new Vuex.Store<IStore>({
-  modules: {
-    biases,
-  },
-
-  // enable strict mode (adds overhead!)
-  // for dev mode only
-  strict: !!process.env.DEV,
+  return Store;
 });
+
+// without quasar wrapper (part of an attempt to get a fully typed store)
+// Vue.use(Vuex);
+
+// export default new Vuex.Store<IStore>({
+//   modules: {
+//     biases,
+//   },
+
+//   // enable strict mode (adds overhead!)
+//   // for dev mode only
+//   strict: !!process.env.DEV,
+// });
