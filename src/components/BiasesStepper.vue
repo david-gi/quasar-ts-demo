@@ -2,8 +2,11 @@
   <q-card class="col-10 no-shadow q-px-md q-py-md">
     <q-card-section>
       <div class="text-h6">Rationality takes practise</div>
-      <div class="text-subtitle2 q-pb-sm">
-        Some cognitive biases to remember
+      <div class="text-subtitle1 q-pb-sm">
+        Some cognitive biases to remember<br>
+        <i class="text-caption">
+          Awareness does not eliminate them, it merely allows strategic thinking.
+        </i>
       </div>
       <item-stepper :items="biases" />
     </q-card-section>

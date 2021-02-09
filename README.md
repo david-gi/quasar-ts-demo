@@ -1,6 +1,6 @@
 # Quasar Demo (quasar-demo)
 
-Just a basic demonstration of a Vue TypeScript project using Quasar
+Just a demonstration of a Vue/Vuex TypeScript project using Quasar.
 
 ## Install the dependencies
 ```bash

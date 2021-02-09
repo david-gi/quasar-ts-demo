@@ -120,6 +120,10 @@ module.exports = configure((ctx) => ({
     ],
   },
 
+  vendor: {
+    add: [ "src/plugins/helpers" ],
+  },
+
   // animations: 'all', // --- includes all animations
   // https://quasar.dev/options/animations
   animations: [],

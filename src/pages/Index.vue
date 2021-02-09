@@ -1,8 +1,21 @@
 <template>
   <q-page class="q-px-xl">
-    <h1>Quasar is fun!</h1>
-    <br>
-    <h4>Finally, one code base to rule them all.</h4>
+    <h1 class="q-mb-none">
+      <small>
+        The Quasar Framework
+      </small>
+    </h1>
+    <div class="q-ml-xl">
+      <h4 class="q-mb-none">One code base to rule them all.</h4>
+      <ul>
+        <li>SPAs (Single Page App)</li>
+        <li>SSR (Server-side Rendered App) (+ optional PWA client takeover)</li>
+        <li>PWAs (Progressive Web App)</li>
+        <li>BEX (Browser Extension)</li>
+        <li>Mobile Apps (Android, iOS, …) through Cordova or Capacitor</li>
+        <li>Multi-platform Desktop Apps (using Electron)</li>
+      </ul>
+    </div>
   </q-page>
 </template>
 
